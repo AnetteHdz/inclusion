@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Loraima Toledo">
+    <meta name="description" content="Prototipo Semana Tec">
+    <meta name="keywords" content="Inclusión, discapacidad, leguaje de señas">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Inclusión y Accesibilidad</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@latest/dist/core.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/logo.jpg" alt="Logo de Inclusión y Accesibilidad">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="info.html">Información</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="foro.html">Foro</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit"><i class="bi bi-search"></i></button>
+        </div>
+    </header>
+    
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="text-primary mb-4" id="typewriter"></h1>
+            <div id="typewriter"></h1></div>
+
+            <!-- Aquí se incluye el CDN de Typewriter.js -->
+            <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.18.1/dist/core.js"></script>
+        
+            <!-- Script que ejecuta la animación -->
+            <script>
+                let app = document.getElementById('typewriter');
+                
+                let typewriter = new Typewriter(app, {
+                  loop: true,
+                  delay: 75,
+                  cursor: "<span style='color: #fb4993;'>|</span>",
+                });
+                
+                typewriter
+                  .pauseFor(2500)
+                  .typeString('<span style="color: #000000;">Bienvenido a Inclusión y Accesibilidad.</span>')
+                  .pauseFor(20000)
+                  .deleteChars(10)
+                  .start();
+            </script>
+
+            <p class="p1">Plataforma de apoyo a personas con discapacidad mental. Únete y participa en nuestros eventos y discusiones. <br><br>Inclusión y Accesibilidad es una organización sin fines de lucro creada por el Tecnológico de Monterrey, campus Monterrey que busca brindar reconocimiento a las personas con discapacidades intelectuales y apoyarlas en la inserción social mediante campamentos y diversas actividades. <strong>¡Navega por nuestra página para conocer más!</strong></p>
+            <button onclick="window.location.href='info.html'">Saber más</button>
+        </div>
+        <div class="hero-image">
+            <img src="imagenes/1.jpg" alt="Imagen representativa de inclusión">
+        
+        </div>
+    </section>
+
+    <div class="parent-container">
+        <!-- Contenedor de la izquierda (contenido principal) -->
+        <div class="left-container">
+            <div class="donation-container">
+        <div class="don"><h1 clas="don">Haz una donación</h1></div>
+        <div class="slider-container">
+            <label for="monto">Selecciona un monto:</label>
+            <input type="range" id="monto" name="monto" min="0" max="1000" value="500" step="10" oninput="actualizarMonto(this.value)">
+            <span id="monto-valor">$500</span>
+        
+              <!-- Recuadro para mostrar el monto elegido -->
+    <div id="monto-recuadro">
+        Monto seleccionado: <span id="monto-seleccionado">$500</span>
+        <script src="scripts.js"></script>
+    </div>
+        </div>
+        
+        <div class="donation-type">
+          <input type="radio" name="donation-type" id="one-time" checked>
+          <label for="one-time">One-time donation</label>
+        </div>
+        <div class="donation-type">
+          <input type="radio" name="donation-type" id="recurring">
+          <label for="recurring">Monthly recurring donation</label>
+        </div>
+        <form class="donation-form">
+          <label for="card-number">Card Number:</label>
+          <input type="text" id="card-number" placeholder="•••• •••• •••• ••••">
+          <label for="expiration">Expiration:</label>
+          <input type="text" id="expiration" placeholder="MM/AA">
+          <label for="verification">Verification:</label>
+          <input type="text" id="verification" placeholder="CVC">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name">
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email">
+          <label for="zip-code">Billing Zip Code:</label>
+          <input type="text" id="zip-code">
+          <button type="submit" class="donation-button">Donate Now</button>
+        </form>
+      </div>
+        </div>
+    
+        <!-- Contenedor de la derecha (enlaces o noticias) -->
+        <div class="right-container">
+            <h2 class=" noti">NOTICIAS CONECTA TEC</h2>
+            <ul class="not">
+                <li><a href="https://conecta.tec.mx/es/noticias/monterrey/educacion/premian-con-maximo-reconocimiento-su-labor-por-promover-la-inclusion">Gana Jorge Ayala Premio Formador LiFE a nivel nacional gracias a su esfuerzo y dedicación en abrir mayores espacios en la sociedad a personas con discapacidad</a></li>
+                <img class="n1" src="imagenes/platica-tec.png">
+                <li><a href="https://conecta.tec.mx/es/noticias/monterrey/educacion/fomentar-una-cultura-inclusiva-primer-paso-al-cambio-afirma-experto">Con más de más de 7 millones de personas que padecen alguna discapacidad en México, Jorge Ayala, director de Inclusión y Accesibilidad del campus Monterrey comparte los nuevos retos que enfrenta este sector en Nuevo León</a></li>
+                <img class="n1" src="imagenes/lsm.png">
+            </ul>
+        </div>
+    </div>
+    
+    
+
+    <div class="social-media-container">
+        <h3>Síguenos en nuestras redes sociales</h3>
+        <div class="social-media-icons">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/inclusionyaccesibilidadtec" target="_blank">
+                <img src="imagenes/facebook.png" alt="Facebook">
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/inclusiontec/" target="_blank">
+                <img src="imagenes/instagram.png" alt="Instagram">
+            </a>
+            <!-- Youtube -->
+            <a href="https://www.youtube.com/@inclusionyaccesibilidadtec7791" target="_blank">
+                <img src="imagenes/youtube.png" alt="Twitter">
+            </a>
+            <!-- Conecta -->
+            <a href="https://conecta.tec.mx/es/noticias/monterrey/educacion/fomentar-una-cultura-inclusiva-primer-paso-al-cambio-afirma-experto" target="_blank">
+                <img src="imagenes/noticias.png" alt="LinkedIn">
+            </a>
+        </div>
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2024 Inclusión y Accesibilidad | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

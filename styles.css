@@ -1,0 +1,538 @@
+/* Estilos para toda la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px; /* Añadir margen entre el logo y el menú */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    height: 35px; /* Altura fija para la barra */
+    padding-left: 10px;
+}
+
+.search-bar button {
+    background-color: #555;
+    border: none;
+    padding: 12px 18px;
+    margin-bottom: 10px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 35px; /* Altura fija para igualar con el input */
+    display: flex;
+    align-items: center; /* Centra el icono verticalmente */
+    justify-content: center;
+}
+
+.search-bar button i {
+    font-size: 18px;
+}
+
+.search-bar button:hover {
+    background-color: #777;
+}
+
+/* Sección principal */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+/* Estilos de la animación de texto */
+.hero-content h1 {
+    white-space: nowrap; /* Evita que el texto se expanda en varias líneas */
+    overflow: hidden;
+    width: 100%; /* Ajusta la anchura para evitar que cambie de tamaño */
+    max-width: 100%; /* Limita el tamaño máximo del contenedor */
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+}
+
+.typewriter-text {
+    font-size: 56px;
+    font-family: "Arial", sans-serif;
+    color: #000;
+}
+
+.hero-image img {
+    width: 500px;
+    height: auto;
+}
+
+/* Estilos de la sección de contenido */
+section.content {
+    margin: 80px;
+    text-align: justify;
+}
+
+/* Estilo para la imagen de perfil */
+.perfil {
+    width: 50px; /* Ancho fijo para la imagen de perfil */
+    height: 50px; /* Altura fija para la imagen de perfil */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor sin deformarse */
+}
+
+.forum{
+    padding: 0px 50px 0px 40px;
+}
+
+/* Contenedor para el post del foro */
+.forum-post {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido */
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra ligera */
+}
+
+/* Estilo para el contenido del post */
+.post-content {
+    margin-left: 15px; /* Añade espacio entre la imagen y el texto */
+}
+
+/* Estilo del nombre de usuario */
+.username {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilo para la fecha */
+.date {
+    font-size: 12px;
+    color: gray;
+    margin-left: 10px;
+}
+
+
+/* Estilos del formulario */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Estilos generales de la sección de eventos de la asociación */
+.asoc-header {
+    text-align: center;
+    background-color: #00539C;
+    color: white;
+    padding: 20px 0;
+}
+
+.asoc-title {
+    margin-bottom: 10px;
+}
+
+.asoc-subtitle {
+    font-size: 1.2em;
+}
+
+.asoc-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.asoc-event {
+    background-color: white;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.asoc-event-content {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.asoc-event-title {
+    color: #00539C;
+    margin-bottom: 10px;
+    margin-right: 100px;
+}
+
+.asoc-event-date {
+    margin-bottom: 15px;
+    flex:1;
+}
+
+.asoc-media {
+    text-align: right;
+    margin: 15px 0;
+    flex:1;
+    margin-top:60px;
+    margin-right: 30px;
+    width: 300px;
+    height: auto;
+    float: right;
+}
+
+.asoc-media img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.asoc-button {
+    background-color: #00539C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.asoc-button:hover {
+    background-color: #003f7d;
+}
+
+.asoc-footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+.p1{
+    margin-right: 50px;
+    text-align: justify;
+}
+
+    /* Estilos específicos para la sección de redes sociales */
+    .social-media-container {
+        background-color: #121212;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .social-media-container h3 {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        color: #fff;
+    }
+
+    .social-media-icons {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .social-media-icons a {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: #1f1f1f;
+        border-radius: 50%;
+        padding: 10px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .social-media-icons a img {
+        width: 100%;
+        height: auto;
+    }
+
+    .social-media-icons a:hover {
+        background-color: #555;
+        transform: scale(1.1);
+    }
+
+    .qs {
+        display: flex;
+        gap: 50px;
+        font-size: 18px;
+      }
+      
+      .columna {
+        flex: 1; /* Hace que ambos divs tengan el mismo ancho */
+        padding: 10px; /* Espaciado interno opcional */
+      }
+      
+      .donation-container {
+        border: 1px solid #ccc;
+        padding: 20px;
+        
+        margin: 20px auto;
+        background-color: rgb(90, 175, 110);
+      }
+  
+      .donation-amount {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+  
+      .donation-type {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+  
+      .donation-type input[type="radio"] {
+        margin-right: 5px;
+      }
+  
+      .donation-form {
+        margin-top: 20px;
+        padding-right: 30px;
+      }
+  
+      .donation-form label {
+        display: block;
+        margin-bottom: 5px;
+      }
+  
+      .donation-form input[type="text"],
+      .donation-form input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+      }
+  
+      .donation-button {
+        background-color: #9f3ed0;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }
+
+      /* Estilo del contenedor */
+.slider-container {
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del slider */
+input[type="range"] {
+    width: 100%;
+    height: 15px;
+    background-color: #ddd;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-appearance: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Estilo del texto que muestra el monto junto al slider */
+#monto-valor {
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* Estilo del recuadro que muestra el monto seleccionado */
+#monto-recuadro {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #333;
+    background-color: #f4f4f4;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.don{
+    font-size: 14px;
+    text-align: center;
+    font-weight:100;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Contenedor padre */
+.parent-container {
+    display: flex;            /* Habilita el modo Flexbox */
+    justify-content: space-between; /* Espacia los hijos de manera uniforme */
+    align-items: flex-start;   /* Alinea los hijos al inicio */
+    height: 1000px;             /* Altura de toda la pantalla */
+    padding: 20px;             /* Espacio alrededor del contenido */
+}
+
+/* Contenedor izquierdo */
+.left-container {
+    width: 48%;                /* Ocupa el 48% del ancho de la pantalla */
+    background-color: #f4f4f4; /* Fondo de ejemplo */
+    padding: 20px;             /* Espacio interior */
+}
+
+/* Contenedor derecho */
+.right-container {
+    width: 50%;                /* Ocupa el 48% del ancho de la pantalla */
+    background-color: #e0e0e0; /* Fondo de ejemplo */
+    padding: 20px;             /* Espacio interior */
+}
+
+.n1{
+    padding-right: 30px;
+    height: 330px;
+    padding-left: 20px;
+    margin: 15px;
+}
+
+.not{
+    list-style-type: none;
+    text-align: justify;
+    margin-right: 30px;
+}
+
+.noti{
+    padding-left: 40px;
+    font-weight: lighter;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+
+.head{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left:90px;
+    margin-bottom: -80px;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.dya{
+    flex: 3;
+}
+
+.inst{
+    margin:35px;
+    float: right;
+}
+
+/* Estilos para el menú */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px; /* Ajusta el espacio entre los ítems si es necesario */
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(226, 212, 212); /* Color del texto por defecto */
+    padding: 10px;
+    display: block;
+}
+
+/* Cambia el color de fondo cuando el puntero está sobre el enlace */
+nav ul li a:hover {
+    background-color: #6a0dad; /* Color morado para el fondo */
+    color: white; /* Cambia el color del texto si es necesario */
+    border-radius: 5px; /* Opcional: agrega bordes redondeados */
+}
+
+.asoc-yt{
+    margin:30px;
+    margin-top: 100px;
+}
